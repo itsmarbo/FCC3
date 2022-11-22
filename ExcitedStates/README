@@ -1,0 +1,9 @@
+---------------------------------------------------------------------
+			Excited States
+---------------------------------------------------------------------
+Having obtained the complete TDDFT calculation, all the .log 
+nucleotides are analized and it is found that they have different
+Excited States, some of them are luminous and others not.
+
+For these calculations, only the bright states are considered (root=x)
+this indicates where the electron could be most probable to move.
