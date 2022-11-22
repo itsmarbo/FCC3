@@ -1,0 +1,10 @@
+----------------------------------------------------------
+		Frequencies
+----------------------------------------------------------
+Here all the files from the nucleoltides are obtained.
+Each of them have been previously optimized, then the 
+final coordinates of the optimization were selected to 
+realize the frequency calculation.
+
+Addditionally from the .chk files the .fchk files are
+obtained so that the MOs could be observed.
