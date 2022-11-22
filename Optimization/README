@@ -1,0 +1,7 @@
+-----------------------------------------------------------
+		Optimization section
+-----------------------------------------------------------
+In this file there are the respective optimization for the
+nucleotides. All of them are using CAM-B3LYP with 6-311G+(d,p)
+basis set.
+Their coordinates are found only in a plane.
