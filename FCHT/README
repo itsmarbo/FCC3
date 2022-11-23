@@ -1,0 +1,9 @@
+--------------------------------------------------------
+			FC-HT
+--------------------------------------------------------
+In this folder for the dipole it is applied the FC+HTf
+to expand the transition moments.
+
+FC = Franck-Condon
+HTi = FC+Herzberg-Teller around the initial state geometry
+HTf = FC+Herzberg-Teller around the final state geometry
