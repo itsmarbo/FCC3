@@ -13,8 +13,8 @@ NORMALMODES  =   COMPUTE   ; COMPUTE/READ/IMPLICIT
 COORDS       =   CARTESIAN ; CARTESIAN/CARTESIAN/NORMALMODE1
 FORCE_REAL   =   YES
 ;INPUT DATA FILES
-STATE1_FILE  =   Uracil6311-tddft.fchk
-STATE2_FILE  =   Uracil6311-es2.fchk
+STATE1_FILE  =   Uracil6311-tddft.fcc
+STATE2_FILE  =   Uracil6311-es2.fcc
 ELDIP_FILE   =   eldip_Uracil6311-es2_fchk
 MAGDIP_FILE   =  magdip_Uracil6311-es2_fchk
   

@@ -13,8 +13,8 @@ NORMALMODES  =   COMPUTE   ; COMPUTE/READ/IMPLICIT
 COORDS       =   CARTESIAN ; CARTESIAN/CARTESIAN/NORMALMODE1
 FORCE_REAL   =   YES
 ;INPUT DATA FILES
-STATE1_FILE  =   Cytosine6311-tddft.fchk
-STATE2_FILE  =   Cytosine6311-es5.fchk
+STATE1_FILE  =   Cytosine6311-tddft.fcc
+STATE2_FILE  =   Cytosine6311-es5.fcc
 ELDIP_FILE   =   eldip_Cytosine6311-es5_fchk
 MAGDIP_FILE   =  magdip_Cytosine6311-es5_fchk
   

@@ -26,7 +26,7 @@
   Commit date: 2022-07-22 10:24:13 +0200
 
  CURRENT RUN INFO
-  Date&Time  : 2022-11-22, 15:35:35
+  Date&Time  : 2022-11-23, 23:07:58
   Input file : STDIN
   Input type : NEW
 
@@ -57,18 +57,18 @@ RM_COORD     =   NONE
 COORDS       =   CARTESIAN  
 FORCE_REAL   =   YES  
 ;INPUT DATA FILES
-STATE1_FILE  =   Cytosine6311-tddft.fchk
-STATE2_FILE  =   Cytosine6311-es5.fchk
+STATE1_FILE  =   Cytosine6311-tddft.fcc
+STATE2_FILE  =   Cytosine6311-es5.fcc
 MASS_FILE    =   
 ELDIP_FILE   =   eldip_Cytosine6311-es5_fchk
 MAGDIP_FILE  =   magdip_Cytosine6311-es5_fchk
 NAC_FILE     =   
 NRCOUP_FILE  =   eldip_Cytosine6311-es5_fchk
-HESS1_FILE   =   Cytosine6311-tddft.fchk
-HESS2_FILE   =   Cytosine6311-tddft.fchk
-GRAD1_FILE   =   Cytosine6311-tddft.fchk
+HESS1_FILE   =   Cytosine6311-tddft.fcc
+HESS2_FILE   =   Cytosine6311-tddft.fcc
+GRAD1_FILE   =   Cytosine6311-tddft.fcc
 GRAD2_COORD  =   CARTESIAN
-GRAD2_FILE   =   Cytosine6311-es5.fchk
+GRAD2_FILE   =   Cytosine6311-es5.fcc
 ;VERBOSE LEVEL
 VERBOSE      =   1
   
@@ -78,15 +78,15 @@ VERBOSE      =   1
 
  ==> State 1 <==
 
- Geometry file: Cytosine6311-tddft.fchk
+ Geometry file: Cytosine6311-tddft.fcc
 
 
- Gradient file: Cytosine6311-tddft.fchk
+ Gradient file: Cytosine6311-tddft.fcc
 
 NOTE: The calculation for this State will assume non-stationary point since the gradient                  
       is not negligible (maximum atomic gradient:   0.085675 a.u.)                                        
  
- Hessian file: Cytosine6311-tddft.fchk
+ Hessian file: Cytosine6311-tddft.fcc
 
 
 
@@ -119,18 +119,18 @@ NOTE: The calculation for this State will assume non-stationary point since the 
  13    # Nr. of atoms
    Atom       X         Y         Z      Mass
 C         -0.0665   -1.7145    0.0000   12.0000
-C         -1.2190    0.4315   -0.0000   12.0000
-C          1.1015    0.3407   -0.0000   12.0000
+C         -1.2190    0.4315    0.0000   12.0000
+C          1.1015    0.3407    0.0000   12.0000
 C          1.1319   -1.0971    0.0000   12.0000
 N         -1.2037   -0.9852    0.0000   14.0031
-N         -0.0000    1.0476   -0.0000   14.0031
-N          2.2717    1.0190   -0.0000   14.0031
-O         -2.2907    0.9949   -0.0000   15.9949
+N          0.0000    1.0476    0.0000   14.0031
+N          2.2717    1.0190    0.0000   14.0031
+O         -2.2907    0.9949    0.0000   15.9949
 H         -2.1124   -1.4236    0.0000    1.0078
 H          2.0570   -1.6537    0.0000    1.0078
 H         -0.1766   -2.7915    0.0000    1.0078
-H          3.1596    0.5513   -0.0000    1.0078
-H          2.2353    2.0251   -0.0000    1.0078
+H          3.1595    0.5513    0.0000    1.0078
+H          2.2353    2.0251    0.0000    1.0078
  
 
  ------------------------------------------------
@@ -139,9 +139,9 @@ H          2.2353    2.0251   -0.0000    1.0078
 
              1           2           3
   
-    1     2.36378    -0.06912    -0.00000
+    1     2.36378    -0.06912     0.00000
     2    -0.06912     4.51998     0.00000
-    3    -0.00000     0.00000     6.88376
+    3     0.00000     0.00000     6.88376
  ------------------------------------------------
 
 
@@ -154,7 +154,7 @@ H          2.2353    2.0251   -0.0000    1.0078
     ************************************
   
     1    -0.99949    -0.03201     0.00000
-    2     0.03201    -0.99949     0.00000
+    2    -0.03201     0.99949     0.00000
     3     0.00000     0.00000     1.00000
  ------------------------------------------------
 
@@ -174,7 +174,7 @@ H          2.2353    2.0251   -0.0000    1.0078
 
 
  Translating State1 to its Center of Mass
- Initial COM:      -0.0460      0.0294     -0.0000
+ Initial COM:      -0.0460      0.0294      0.0000
 
 
  ================================
@@ -184,12 +184,12 @@ H          2.2353    2.0251   -0.0000    1.0078
  ----------------------------------
    Redundant Frequencies (cm-1)
  ----------------------------------
-     1    -0.00002
-     2    -0.00002
-     3    -0.00001
-     4     0.00002
-     5     0.00003
-     6     0.00004
+     1    -0.00005
+     2    -0.00003
+     3    -0.00002
+     4    -0.00002
+     5    -0.00001
+     6     0.00002
  ----------------------------------
 
 
@@ -242,19 +242,19 @@ H          2.2353    2.0251   -0.0000    1.0078
   Rotational temperatures (K)
      0.18722     0.09777     0.06423
  
-           1  -598.768593663842     
+           1  -598.768593659840     
 
 WARNING: Imaginary frequency ignored                                                                         
  
-           2  -391.879266132853     
+           2  -391.879266125954     
 
 WARNING: Imaginary frequency ignored                                                                         
  
-           3  -350.211448233163     
+           3  -350.211448225768     
 
 WARNING: Imaginary frequency ignored                                                                         
  
-           4  -68.6504831555362     
+           4  -68.6504832018078     
 
 WARNING: Imaginary frequency ignored                                                                         
  
@@ -283,15 +283,15 @@ WARNING: Imaginary frequency ignored
 
  ==> State 2 <==
 
- Geometry file: Cytosine6311-es5.fchk
+ Geometry file: Cytosine6311-es5.fcc
 
 
- Gradient file: Cytosine6311-es5.fchk
+ Gradient file: Cytosine6311-es5.fcc
 
 NOTE: The calculation for this State will assume non-stationary point since the gradient                  
       is not negligible (maximum atomic gradient:   0.106163 a.u.)                                        
  
- Hessian file: Cytosine6311-tddft.fchk
+ Hessian file: Cytosine6311-tddft.fcc
 
 
  Combination abs/ECDNO
@@ -307,18 +307,18 @@ NOTE: The calculation for this State will assume non-stationary point since the 
  13    # Nr. of atoms
    Atom       X         Y         Z      Mass
 C         -0.0665   -1.7145    0.0000   12.0000
-C         -1.2190    0.4315   -0.0000   12.0000
-C          1.1015    0.3407   -0.0000   12.0000
+C         -1.2190    0.4315    0.0000   12.0000
+C          1.1015    0.3407    0.0000   12.0000
 C          1.1319   -1.0971    0.0000   12.0000
 N         -1.2037   -0.9852    0.0000   14.0031
-N         -0.0000    1.0476   -0.0000   14.0031
-N          2.2717    1.0190   -0.0000   14.0031
-O         -2.2907    0.9949   -0.0000   15.9949
+N          0.0000    1.0476    0.0000   14.0031
+N          2.2717    1.0190    0.0000   14.0031
+O         -2.2907    0.9949    0.0000   15.9949
 H         -2.1124   -1.4236    0.0000    1.0078
 H          2.0570   -1.6537    0.0000    1.0078
 H         -0.1766   -2.7915    0.0000    1.0078
-H          3.1596    0.5513   -0.0000    1.0078
-H          2.2353    2.0251   -0.0000    1.0078
+H          3.1595    0.5513    0.0000    1.0078
+H          2.2353    2.0251    0.0000    1.0078
  
 
  ------------------------------------------------
@@ -327,9 +327,9 @@ H          2.2353    2.0251   -0.0000    1.0078
 
              1           2           3
   
-    1     2.36378    -0.06912    -0.00000
+    1     2.36378    -0.06912     0.00000
     2    -0.06912     4.51998     0.00000
-    3    -0.00000     0.00000     6.88376
+    3     0.00000     0.00000     6.88376
  ------------------------------------------------
 
 
@@ -342,7 +342,7 @@ H          2.2353    2.0251   -0.0000    1.0078
     ************************************
   
     1    -0.99949    -0.03201     0.00000
-    2     0.03201    -0.99949     0.00000
+    2    -0.03201     0.99949     0.00000
     3     0.00000     0.00000     1.00000
  ------------------------------------------------
 
@@ -362,7 +362,7 @@ H          2.2353    2.0251   -0.0000    1.0078
 
 
  Translating State2 to its Center of Mass
- Initial COM:      -0.0460      0.0294     -0.0000
+ Initial COM:      -0.0460      0.0294      0.0000
 
 
  ================================
@@ -592,12 +592,12 @@ IND DEF    FREQUENCY     SHIFT    I11 C11  I12 C12   I13 C13     FR(I11)  I90 I9
     25      30    3248.07203      -0.31010E-01
     26      33    3766.95928       0.11955E-01
     27      32    3645.30819      -0.27475E-03
-    28      10     487.31816       0.46250E-11
-    29       5     179.04186       0.30889E-11
-    30      15     759.36755      -0.15900E-11
-    31      13     693.30743       0.84801E-12
-    32       8     435.76410      -0.65115E-12
-    33       7     392.05878      -0.65648E-14
+    28      10     487.31816       0.45792E-11
+    29       5     179.04186       0.30806E-11
+    30      15     759.36755      -0.15902E-11
+    31      13     693.30743       0.85048E-12
+    32       8     435.76410      -0.66076E-12
+    33       7     392.05878      -0.13071E-13
    
    
  MODES OF STATE1 IN ORDER OF DECREASING FR COUPL
@@ -669,12 +669,12 @@ IND DEF    FREQUENCY     SHIFT    I11 C11  I12 C12   I13 C13     FR(I11)  I90 I9
     25      30    3248.07203       0.31010E-01
     26      33    3766.95928      -0.11955E-01
     27      32    3645.30819       0.27475E-03
-    28      10     487.31816      -0.46250E-11
-    29       5     179.04186      -0.30889E-11
-    30      15     759.36755       0.15900E-11
-    31      13     693.30743      -0.84801E-12
-    32       8     435.76410       0.65115E-12
-    33       7     392.05878       0.65648E-14
+    28      10     487.31816      -0.45792E-11
+    29       5     179.04186      -0.30806E-11
+    30      15     759.36755       0.15902E-11
+    31      13     693.30743      -0.85048E-12
+    32       8     435.76410       0.66076E-12
+    33       7     392.05878       0.13071E-13
    
    
  MODES OF STATE2 IN ORDER OF DECREASING FR COUPL
@@ -723,17 +723,17 @@ IND DEF    FREQUENCY     SHIFT    I11 C11  I12 C12   I13 C13     FR(I11)  I90 I9
      2             NaN             NaN
      3             NaN             NaN
      4             NaN             NaN
-     5     0.30889E-11    -0.30889E-11
+     5     0.30806E-11    -0.30806E-11
      6     0.21565E+01    -0.21565E+01
-     7    -0.65648E-14     0.65648E-14
-     8    -0.65115E-12     0.65115E-12
+     7    -0.13071E-13     0.13071E-13
+     8    -0.66076E-12     0.66076E-12
      9    -0.89037E+00     0.89037E+00
-    10     0.46250E-11    -0.46250E-11
+    10     0.45792E-11    -0.45792E-11
     11     0.16310E+00    -0.16310E+00
     12     0.22962E+00    -0.22962E+00
-    13     0.84801E-12    -0.84801E-12
+    13     0.85048E-12    -0.85048E-12
     14     0.33291E+00    -0.33291E+00
-    15    -0.15900E-11     0.15900E-11
+    15    -0.15902E-11     0.15902E-11
     16     0.92365E-01    -0.92365E-01
     17     0.10971E+00    -0.10971E+00
     18    -0.13937E+01     0.13937E+01
@@ -954,7 +954,7 @@ NOTE: Changing Ead to optimize TD method before entering the spectrum calculatio
  dt  0.792881005380783     
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       0.117
+  CPU (s) for tdspectra :       0.101
  ==========================================
                                            
 
@@ -978,7 +978,7 @@ NOTE: Changing Ead to optimize TD method before entering the spectrum calculatio
  
  ****************** FCclasses finished *******************
  Timing...   
-  CPU (s)       0.248
+  CPU (s)       0.121
  *********************************************************
  
  FCclasses finished with warnings
