@@ -3,7 +3,7 @@ PROPERTY     =   OPA  ; OPA/EMI/ECD/CPL/RR/TPA/MCD/IC
 MODEL        =   VG   ; AS/ASF/VG/VG/VGF/VH
 DIPOLE       =   FC   ; FC/HTi/HTf
 TEMP         =   0.00 ; (temperature)
-DE           =   5.3144; (adiabatic/vertical energy)
+DE           =   5.3144 ; (adiabatic/vertical energy)
 BROADFUN     =   GAU  ; GAU/LOR/VOI
 SPCMIN    =   4.0
 SPCMAX    =   9.0
@@ -13,7 +13,7 @@ NORMALMODES  =   COMPUTE   ; COMPUTE/READ/IMPLICIT
 COORDS       =   CARTESIAN ; CARTESIAN/CARTESIAN/NORMALMODE1
 FORCE_REAL   =   YES
 ;INPUT DATA FILES
-STATE1_FILE  =   Thymine6311-tddft.fcc
+STATE1_FILE  =   Thymine6311-freq.fcc
 STATE2_FILE  =   Thymine6311-es2.fcc
 ELDIP_FILE   =   eldip_Thymine6311-es2_fchk
 MAGDIP_FILE   =  magdip_Thymine6311-es2_fchk
