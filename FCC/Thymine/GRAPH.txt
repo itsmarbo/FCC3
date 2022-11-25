@@ -1,0 +1,11 @@
+-------------------------------------------------------------
+			GRAPHIC
+-------------------------------------------------------------
+The graphic is showing different Excited States from Thymine.
+1 excited state is also de first dark state and it shows a different behaviour compared with the bright ones.
+
+2nd excited state is the first bright state
+
+5th excited state is the second bright state
+
+6th excited state is the third bright state
