@@ -1,0 +1,11 @@
+-------------------------------------------------------
+		Distortion
+-------------------------------------------------------
+In this folder there are the files containing thymine but
+with a slight difference, which is a distortion from one
+of the hydrogens.
+
+Important Remarks:
+1. When we have an out of plane structure then the phenomena occuring is the coupling between BRIGHT and DARK states.
+
+2. When looking for a Transition Dipole (TD) in the output the polarization in TD do not have a,y or z defined.
