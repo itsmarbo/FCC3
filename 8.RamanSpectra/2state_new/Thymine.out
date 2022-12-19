@@ -26,7 +26,7 @@
   Commit date: 2022-07-22 10:24:13 +0200
 
  CURRENT RUN INFO
-  Date&Time  : 2022-12-12, 12:18:01
+  Date&Time  : 2022-12-19, 14:11:43
   Input file : STDIN
   Input type : NEW
 
@@ -1399,7 +1399,7 @@ RAILEIGH BAND
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       0.238
+  CPU (s) for tdspectra :       0.227
  ==========================================
                                            
 
@@ -1921,7 +1921,7 @@ FUNDAMENTAL BANDS
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       0.250
+  CPU (s) for tdspectra :       0.251
  ==========================================
                                            
 
@@ -3089,7 +3089,7 @@ FUNDAMENTAL BANDS
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       0.231
+  CPU (s) for tdspectra :       0.233
  ==========================================
                                            
 
@@ -3235,7 +3235,7 @@ FUNDAMENTAL BANDS
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       0.231
+  CPU (s) for tdspectra :       0.230
  ==========================================
                                            
 
@@ -4262,7 +4262,7 @@ FUNDAMENTAL BANDS
                                            
  =========== compRR_TD finished ===========  
  Timing...
-  CPU (s) for compRR_TD :      10.947
+  CPU (s) for compRR_TD :      10.962
  ==========================================
 
 
@@ -4281,7 +4281,7 @@ FUNDAMENTAL BANDS
  
  ****************** FCclasses finished *******************
  Timing...   
-  CPU (s)      10.977
+  CPU (s)      10.992
  *********************************************************
  
  FCclasses finished successfully
