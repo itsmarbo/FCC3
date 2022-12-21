@@ -1,4 +1,10 @@
 -----------------------------------------------------
 		RAMAN SPECTRA
 -----------------------------------------------------
-Here only BRIGHT states have their own Raman Spectra
+Here only BRIGHT states are calculated to obtain their
+respective:
+	1. Raman Excitation Profile
+		Calculated using mode 31
+	2. Raman Spectra
+		For each calculation there's been made the
+		conversion from nm -> cm^-1
