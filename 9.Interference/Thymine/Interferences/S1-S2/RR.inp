@@ -1,7 +1,7 @@
 $$$
 PROPERTY     =   RR  ; OPA/EMI/ECD/CPL/RR/TPA/MCD/IC
 MODEL        =   VG   ; AS/ASF/VG/VG/VGF/VH
-DIPOLE       =   FC   ; FC/HTi/HTf
+DIPOLE       =   HTi   ; FC/HTi/HTf
 RR_POLAR     =   READ
 RR_SPEED     =   NO
 TEMP         =   0.00 ; (temperature)
