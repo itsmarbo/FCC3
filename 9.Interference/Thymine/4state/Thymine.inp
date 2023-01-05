@@ -1,10 +1,10 @@
 $$$
 PROPERTY     =   RR  ; OPA/EMI/ECD/CPL/RR/TPA/MCD/IC
 MODEL        =   VG   ; AS/ASF/VG/VG/VGF/VH
-DIPOLE       =   HTi   ; FC/HTi/HTf
+DIPOLE       =   FC   ; FC/HTi/HTf
 TEMP         =   0.00 ; (temperature)
 DE           =   6.4658 ; (adiabatic/vertical energy)
-BROADFUN     =   GAU  ; GAU/LOR/VOI
+BROADFUN     =   LOR  ; GAU/LOR/VOI
 SPCMIN    =   4.0
 SPCMAX    =   9.0
 HWHM         =   0.04 ; (broadening)
