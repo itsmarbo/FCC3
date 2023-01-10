@@ -26,7 +26,7 @@
   Commit date: 2022-07-22 10:24:13 +0200
 
  CURRENT RUN INFO
-  Date&Time  : 2023-01-10, 13:09:18
+  Date&Time  : 2023-01-10, 17:49:40
   Input file : STDIN
   Input type : NEW
 
@@ -52,7 +52,7 @@ ROT          =   1
 SPCMIN       =     4.000
 SPCMAX       =     9.000
 ;RESONANCE RAMAN
-RR_NFIELD        =   -1
+RR_NFIELD        =   1001
 RR_FIELDMIN      =   4.000
 RR_FIELDMAX      =   9.000
 RR_POLAR         =   W
@@ -1281,29 +1281,34 @@ NOTE: DE read from input:   5.533 (eV)
 NOTE: Spectra resolution set to:  0.00400                                                                 
  
 
+NOTE: Resolution changed matching points of RR-TI grid. Updated value:  0.00500eV                         
+ 
+ Resol(TI) =  0.00500eV
+
 NOTE: To ensure exact match of TI and TD resuls, final spectral range reset to:    4.0000-                
        9.0000(eV)                                                                                         
  
 
  ----------------------------------------
  Refined spectral range for simulations: 
-  nene       =      1251
+  nene(RR-TI)=      1001
+  nene       =      1001
   From E(eV) =    4.0000
   To   E(eV) =    9.0000
  
  Related time-domain parameters
  (with energy shift & extended range):
-  ntime =          652
-  dt    =       0.7929
-  tfin  =     516.5620
+  ntime =          522
+  dt    =       0.7923
+  tfin  =     413.1706
  Shift info (for external FT)
-  dE_ext=  0.104000    
-  Eshift=   3.89600    
+  dE_ext=  0.105000    
+  Eshift=   3.89500    
  ----------------------------------------
 
 
 NOTE: Changing Ead to optimize TD method before entering the spectrum calculation.Ead(original)=          
-        5.156 (eV); Ead(shifted )=   1.260 (eV)                                                           
+        5.156 (eV); Ead(shifted )=   1.261 (eV)                                                           
  
 
 
@@ -1313,7 +1318,7 @@ Computing RR 2D spectrum (TD)
  SUMMARY OF CALCULATION OPTIONS
  -------------------------------
  Adiabatic Energy (eV)  :   5.1556
- Shifted Ad. Energy (eV):   1.2596
+ Shifted Ad. Energy (eV):   1.2606
 
  Tipe of transition     : ABS-ECDNO
 
@@ -1321,16 +1326,16 @@ Computing RR 2D spectrum (TD)
  El. dipole at ref geom :    0.286E-01   0.744E-02   0.115E-01
 
  Numerical evaluation of xi(t)
-         Total time (fs):   516.562
-         Nr data points : 652
-         Time step (fs) :  0.793    
+         Total time (fs):   413.171
+         Nr data points : 522
+         Time step (fs) :  0.792    
 
  Broad. function        : LOR  
  Broad. exponent        :    1.470E-03
  Broad. order           : 1
  -------------------------------
 
- Computing correlation functions over 652 points
+ Computing correlation functions over 522 points
 
 
 
@@ -1351,18 +1356,18 @@ RAILEIGH BAND
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.161
+  CPU (s) for tdspectra :       0.936
  ==========================================
                                            
 
 NOTE: FOUND POINT OF THE SCAN CLOSEST TO THE ABS MAX                                                      
  
- Ebest(eV) =     5.53
+ Ebest(eV) =     5.54
  Evert(eV) =     5.53
 
 
@@ -1387,12 +1392,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.127
+  CPU (s) for tdspectra :       0.943
  ==========================================
                                            
 
@@ -1412,12 +1417,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.038
+  CPU (s) for tdspectra :       0.859
  ==========================================
                                            
 
@@ -1437,12 +1442,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.036
+  CPU (s) for tdspectra :       0.855
  ==========================================
                                            
 
@@ -1462,12 +1467,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.039
+  CPU (s) for tdspectra :       0.979
  ==========================================
                                            
 
@@ -1487,12 +1492,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.041
+  CPU (s) for tdspectra :       0.933
  ==========================================
                                            
 
@@ -1512,12 +1517,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.042
+  CPU (s) for tdspectra :       0.850
  ==========================================
                                            
 
@@ -1537,12 +1542,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.040
+  CPU (s) for tdspectra :       0.834
  ==========================================
                                            
 
@@ -1562,12 +1567,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.036
+  CPU (s) for tdspectra :       0.833
  ==========================================
                                            
 
@@ -1587,12 +1592,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.038
+  CPU (s) for tdspectra :       0.837
  ==========================================
                                            
 
@@ -1612,12 +1617,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.833
  ==========================================
                                            
 
@@ -1637,12 +1642,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.039
+  CPU (s) for tdspectra :       0.833
  ==========================================
                                            
 
@@ -1662,12 +1667,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.833
  ==========================================
                                            
 
@@ -1687,12 +1692,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.846
  ==========================================
                                            
 
@@ -1712,12 +1717,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.039
+  CPU (s) for tdspectra :       0.831
  ==========================================
                                            
 
@@ -1737,12 +1742,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.035
+  CPU (s) for tdspectra :       0.835
  ==========================================
                                            
 
@@ -1762,12 +1767,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.848
  ==========================================
                                            
 
@@ -1787,12 +1792,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.840
  ==========================================
                                            
 
@@ -1812,12 +1817,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.036
+  CPU (s) for tdspectra :       0.894
  ==========================================
                                            
 
@@ -1837,12 +1842,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.036
+  CPU (s) for tdspectra :       0.831
  ==========================================
                                            
 
@@ -1862,12 +1867,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.040
+  CPU (s) for tdspectra :       0.833
  ==========================================
                                            
 
@@ -1887,12 +1892,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.035
+  CPU (s) for tdspectra :       0.834
  ==========================================
                                            
 
@@ -1912,12 +1917,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.036
+  CPU (s) for tdspectra :       0.840
  ==========================================
                                            
 
@@ -1937,12 +1942,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.035
+  CPU (s) for tdspectra :       0.845
  ==========================================
                                            
 
@@ -1962,12 +1967,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.036
+  CPU (s) for tdspectra :       0.832
  ==========================================
                                            
 
@@ -1987,12 +1992,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.038
+  CPU (s) for tdspectra :       0.834
  ==========================================
                                            
 
@@ -2012,12 +2017,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.903
  ==========================================
                                            
 
@@ -2037,12 +2042,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.835
  ==========================================
                                            
 
@@ -2062,12 +2067,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.040
+  CPU (s) for tdspectra :       0.844
  ==========================================
                                            
 
@@ -2087,12 +2092,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.039
+  CPU (s) for tdspectra :       0.861
  ==========================================
                                            
 
@@ -2112,12 +2117,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.038
+  CPU (s) for tdspectra :       0.834
  ==========================================
                                            
 
@@ -2137,12 +2142,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.041
+  CPU (s) for tdspectra :       0.850
  ==========================================
                                            
 
@@ -2162,12 +2167,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.038
+  CPU (s) for tdspectra :       0.840
  ==========================================
                                            
 
@@ -2187,12 +2192,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.038
+  CPU (s) for tdspectra :       0.833
  ==========================================
                                            
 
@@ -2212,12 +2217,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.835
  ==========================================
                                            
 
@@ -2237,12 +2242,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.833
  ==========================================
                                            
 
@@ -2262,12 +2267,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.832
  ==========================================
                                            
 
@@ -2287,12 +2292,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.036
+  CPU (s) for tdspectra :       0.919
  ==========================================
                                            
 
@@ -2312,12 +2317,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.039
+  CPU (s) for tdspectra :       0.920
  ==========================================
                                            
 
@@ -2337,12 +2342,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.040
+  CPU (s) for tdspectra :       0.843
  ==========================================
                                            
 
@@ -2362,12 +2367,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.036
+  CPU (s) for tdspectra :       0.835
  ==========================================
                                            
 
@@ -2387,12 +2392,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.036
+  CPU (s) for tdspectra :       0.833
  ==========================================
                                            
 
@@ -2412,12 +2417,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.832
  ==========================================
                                            
 
@@ -2437,12 +2442,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.035
+  CPU (s) for tdspectra :       0.839
  ==========================================
                                            
 
@@ -2462,12 +2467,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.837
  ==========================================
                                            
 
@@ -2487,12 +2492,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.855
  ==========================================
                                            
 
@@ -2512,12 +2517,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.039
+  CPU (s) for tdspectra :       0.862
  ==========================================
                                            
 
@@ -2537,12 +2542,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.040
+  CPU (s) for tdspectra :       0.867
  ==========================================
                                            
 
@@ -2562,12 +2567,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.035
+  CPU (s) for tdspectra :       0.831
  ==========================================
                                            
 
@@ -2587,12 +2592,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.044
+  CPU (s) for tdspectra :       0.865
  ==========================================
                                            
 
@@ -2612,12 +2617,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.043
+  CPU (s) for tdspectra :       0.869
  ==========================================
                                            
 
@@ -2637,12 +2642,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.870
  ==========================================
                                            
 
@@ -2662,12 +2667,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.866
  ==========================================
                                            
 
@@ -2687,12 +2692,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.858
  ==========================================
                                            
 
@@ -2712,12 +2717,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.863
  ==========================================
                                            
 
@@ -2737,12 +2742,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.038
+  CPU (s) for tdspectra :       0.876
  ==========================================
                                            
 
@@ -2762,12 +2767,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.039
+  CPU (s) for tdspectra :       0.870
  ==========================================
                                            
 
@@ -2787,12 +2792,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.049
+  CPU (s) for tdspectra :       0.871
  ==========================================
                                            
 
@@ -2812,12 +2817,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.036
+  CPU (s) for tdspectra :       0.871
  ==========================================
                                            
 
@@ -2837,12 +2842,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.038
+  CPU (s) for tdspectra :       0.831
  ==========================================
                                            
 
@@ -2862,12 +2867,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.036
+  CPU (s) for tdspectra :       0.835
  ==========================================
                                            
 
@@ -2887,12 +2892,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.835
  ==========================================
                                            
 
@@ -2912,12 +2917,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.035
+  CPU (s) for tdspectra :       0.839
  ==========================================
                                            
 
@@ -2937,12 +2942,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.834
  ==========================================
                                            
 
@@ -2962,12 +2967,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.036
+  CPU (s) for tdspectra :       0.851
  ==========================================
                                            
 
@@ -2987,12 +2992,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.832
  ==========================================
                                            
 
@@ -3012,12 +3017,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.039
+  CPU (s) for tdspectra :       0.830
  ==========================================
                                            
 
@@ -3037,12 +3042,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.040
+  CPU (s) for tdspectra :       0.831
  ==========================================
                                            
 
@@ -3062,12 +3067,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.035
+  CPU (s) for tdspectra :       0.830
  ==========================================
                                            
 
@@ -3087,12 +3092,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.039
+  CPU (s) for tdspectra :       0.830
  ==========================================
                                            
 
@@ -3112,12 +3117,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.846
  ==========================================
                                            
 
@@ -3137,12 +3142,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.905
  ==========================================
                                            
 
@@ -3162,12 +3167,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.039
+  CPU (s) for tdspectra :       0.920
  ==========================================
                                            
 
@@ -3187,12 +3192,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.909
  ==========================================
                                            
 
@@ -3212,12 +3217,12 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.037
+  CPU (s) for tdspectra :       0.878
  ==========================================
                                            
 
@@ -3237,17 +3242,17 @@ FUNDAMENTAL BANDS
 
 
 * (rho,sigma = 1 1) *
- Calling FFT with 1304 points
+ Calling FFT with 1044 points
 
  Fourie-Transform with: fft_calc subroutine (FFTW)
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       1.038
+  CPU (s) for tdspectra :       0.874
  ==========================================
                                            
  =========== compRR_TD finished ===========  
  Timing...
-  CPU (s) for compRR_TD :      81.976
+  CPU (s) for compRR_TD :      67.451
  ==========================================
 
 
@@ -3259,14 +3264,14 @@ FUNDAMENTAL BANDS
 
 ===============================
  ---------------------------------
- 8 notes raised along the run
+ 9 notes raised along the run
  Look for NOTE in the output
  ---------------------------------
 
  
  ****************** FCclasses finished *******************
  Timing...   
-  CPU (s)      82.026
+  CPU (s)      67.499
  *********************************************************
  
  FCclasses finished successfully
