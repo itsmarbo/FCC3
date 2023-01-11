@@ -1,0 +1,11 @@
+----------------------------------------------------
+			README
+----------------------------------------------------
+In this folder you will find all the Raman Excitation Profiles
+per each interference calculation.
+
+Here it is used the FCC3 tool: get_exc_prof
+
+The file used is: RR_Spectrum_VertE.dat
+
+Only the column of 'vibrational frequency' is plotted
