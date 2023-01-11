@@ -1,0 +1,10 @@
+----------------------------------------------
+		README 
+----------------------------------------------
+In this folder you will find all the files required
+in order to perform the vRR and Interference calculations
+but this time WATER molecules are REMOVED.
+
+HOW?
+By using 'gen_fcc_state' a useful tool from FCC3. Only
+counting the very first 15 atoms for THYMINE.
