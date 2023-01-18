@@ -1,0 +1,20 @@
+------------------------------------------------------
+			README
+------------------------------------------------------
+Here you will find all the files to create the ABS Spectra
+ 
+  Steps:
+	1. Calculate the ABS Spectra per state
+	2. Obtain the spec_Int_TD.dat
+	3. Sum all "y" columns = ABS intensities
+	4. Obtain a plot x,y where "y" = sum of y's
+	5. Compare with experimental
+
+Files description:
+	*spec_Int_TD.dat = per each excited state
+	sum.dat = the sum of all the "Y's" from spec_Int_TD.dat
+	energy.dat = cp of 1es_spec_Int_TD.dat to obtain the energy column
+	graph = energy.dat + sum.dat
+	graph2= graph - 2nd column
+
+To plot: graph2

@@ -26,7 +26,7 @@
   Commit date: 2022-07-22 10:24:13 +0200
 
  CURRENT RUN INFO
-  Date&Time  : 2023-01-18, 12:00:30
+  Date&Time  : 2023-01-18, 16:40:27
   Input file : STDIN
   Input type : NEW
 
@@ -44,9 +44,10 @@ DIPOLE       =   FC
 DIPDER_COORD =   CARTESIAN  
 TEMP         =     0.00
 DE           =   6.48110
-BROADFUN     =   LOR  
-HWHM         =   0.0400
-RESOL        =   0.0040  ; (default: HWHM/10)
+BROADFUN     =   VOI  
+HWHM         =   0.1200
+HWHM2        =   0.0400
+RESOL        =   0.0120  ; (default: HWHM/10)
 METHOD       =   TD   
 ROT          =   1
 SPCMIN       =     4.000
@@ -1269,32 +1270,32 @@ NOTE: DE read from input:   6.481 (eV)
  ********************************************** 
    
 
-NOTE: Spectra resolution set to:  0.00400                                                                 
+NOTE: Spectra resolution set to:  0.01200                                                                 
  
 
 NOTE: To ensure exact match of TI and TD resuls, final spectral range reset to:    4.0000-                
-       9.0000(eV)                                                                                         
+       9.0040(eV)                                                                                         
  
 
  ----------------------------------------
  Refined spectral range for simulations: 
-  nene       =      1251
+  nene       =       418
   From E(eV) =    4.0000
-  To   E(eV) =    9.0000
+  To   E(eV) =    9.0040
  
  Related time-domain parameters
  (with energy shift & extended range):
-  ntime =          652
-  dt    =       0.7929
-  tfin  =     516.5620
+  ntime =          218
+  dt    =       0.7905
+  tfin  =     171.9242
  Shift info (for external FT)
-  dE_ext=  0.104000    
-  Eshift=   3.89600    
+  dE_ext=  0.108000    
+  Eshift=   3.89200    
  ----------------------------------------
 
 
 NOTE: Changing Ead to optimize TD method before entering the spectrum calculation.Ead(original)=          
-        6.143 (eV); Ead(shifted )=   2.247 (eV)                                                           
+        6.143 (eV); Ead(shifted )=   2.251 (eV)                                                           
  
 
 
@@ -1311,7 +1312,7 @@ NOTE: Changing Ead to optimize TD method before entering the spectrum calculatio
  
  SUMMARY OF CALCULATION OPTIONS
  -------------------------------
- Adiabatic Energy (eV)  :   2.2469
+ Adiabatic Energy (eV)  :   2.2509
 
  Tipe of transition     : ABS-ECDNO
 
@@ -1319,29 +1320,31 @@ NOTE: Changing Ead to optimize TD method before entering the spectrum calculatio
  El. dipole at ref geom :    0.289E-02   0.596E-01  -0.152    
 
  Numerical evaluation of xi(t)
-         Total time (fs):   516.562
-         Nr data points : 652
-         Time step (fs) :  0.793    
+         Total time (fs):   171.924
+         Nr data points : 218
+         Time step (fs) :  0.790    
 
- Broad. function        : LOR  
- Broad. exponent        :    1.470E-03
- Broad. order           : 1
+ Broad. function        : VOI  
+ Broad. exponent (Gau)  :    7.014E-06
+ Broad. order (Gau)     : 2
+ Broad. exponent (Lor)  :    1.470E-03
+ Broad. order (Lor)     : 1
  -------------------------------
 
- Computing correlation functions over 652 points
+ Computing correlation functions over 218 points
 
- Calling FFT with 1304 points
+ Calling FFT with 436 points
 
 
  Entering in fft_calc subroutine (FFTW)
- Ndata: 1304
- tini and tfin  -516.562     516.562
+ Ndata: 436
+ tini and tfin  -171.924     171.924
 
- df  9.671957840330411E-004
- dt  0.792881005380783     
+ df  2.901587352099123E-003
+ dt  0.790456292826101     
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       0.907
+  CPU (s) for tdspectra :       0.314
  ==========================================
                                            
 
@@ -1360,7 +1363,7 @@ NOTE: Changing Ead to optimize TD method before entering the spectrum calculatio
  
  ****************** FCclasses finished *******************
  Timing...   
-  CPU (s)       0.967
+  CPU (s)       0.368
  *********************************************************
  
  FCclasses finished successfully
