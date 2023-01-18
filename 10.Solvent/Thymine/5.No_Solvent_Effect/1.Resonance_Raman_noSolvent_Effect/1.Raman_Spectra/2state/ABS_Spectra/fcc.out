@@ -26,7 +26,7 @@
   Commit date: 2022-07-22 10:24:13 +0200
 
  CURRENT RUN INFO
-  Date&Time  : 2023-01-12, 15:35:33
+  Date&Time  : 2023-01-18, 12:36:12
   Input file : STDIN
   Input type : NEW
 
@@ -38,7 +38,7 @@ $$$
 ;GENERAL OPTIONS:
 ; NAT        = (read from structure files)
 ; NVIB       = (determined vibrational analysis)
-PROPERTY     =   RR    
+PROPERTY     =   OPA   
 MODEL        =   VG   
 DIPOLE       =   FC   
 DIPDER_COORD =   CARTESIAN  
@@ -52,14 +52,6 @@ METHOD       =   TD
 ROT          =   1
 SPCMIN       =     4.000
 SPCMAX       =     9.000
-;RESONANCE RAMAN
-RR_NFIELD        =   1001
-RR_FIELDMIN      =   4.000
-RR_FIELDMAX      =   9.000
-RR_POLAR         =   W
-RR_SPEED         =   Y
-RR_SINGLE_MAXEXC =   1
-RR_DOUBLE_MAXEXC =   1
 ;VIBRATIONAL ANALYSIS
 NORMALMODES  =   COMPUTE  
 RM_COORD     =   NONE    
@@ -290,9 +282,8 @@ NOTE: The calculation for this State will assume non-stationary point since the 
  Hessian file: ../../../../Thymine6311-freq-solv.fcc
 
 
- A RR calculation  will be performed
- RESETTING OPTRANS TO ABS
- RESETTING OPTRANS1 TO ECDNO
+ Combination abs/ECDNO
+ A standard one-photon absorption calculation  will be performed
 
 
  =========================
@@ -899,44 +890,46 @@ NOTE: DE read from input:   5.533 (eV)
 NOTE: Spectra resolution set to:  0.01200                                                                 
  
 
-NOTE: Resolution changed matching points of RR-TI grid. Updated value:  0.00500eV                         
- 
- Resol(TI) =  0.00500eV
-
 NOTE: To ensure exact match of TI and TD resuls, final spectral range reset to:    4.0000-                
-       9.0000(eV)                                                                                         
+       9.0040(eV)                                                                                         
  
 
  ----------------------------------------
  Refined spectral range for simulations: 
-  nene(RR-TI)=      1001
-  nene       =      1001
+  nene       =       418
   From E(eV) =    4.0000
-  To   E(eV) =    9.0000
+  To   E(eV) =    9.0040
  
  Related time-domain parameters
  (with energy shift & extended range):
-  ntime =          522
-  dt    =       0.7923
-  tfin  =     413.1706
+  ntime =          218
+  dt    =       0.7905
+  tfin  =     171.9242
  Shift info (for external FT)
-  dE_ext=  0.105000    
-  Eshift=   3.89500    
+  dE_ext=  0.108000    
+  Eshift=   3.89200    
  ----------------------------------------
 
 
 NOTE: Changing Ead to optimize TD method before entering the spectrum calculation.Ead(original)=          
-        5.253 (eV); Ead(shifted )=   1.358 (eV)                                                           
+        5.253 (eV); Ead(shifted )=   1.361 (eV)                                                           
  
 
 
-Computing RR 2D spectrum (TD)
------------------------------
-
+ ____________________________________________
+  ============================================
+  PROGRAM: td_onephoton
+   Compute vibronic spectra with a harmonic 
+   TD formulation                           
+                                            
+  References:                               
+   Comput Theoret Chem, 1040--1041, 186-194 (2014)
+ ____________________________________________
+  ============================================
+ 
  SUMMARY OF CALCULATION OPTIONS
  -------------------------------
- Adiabatic Energy (eV)  :   5.2529
- Shifted Ad. Energy (eV):   1.3579
+ Adiabatic Energy (eV)  :   1.3609
 
  Tipe of transition     : ABS-ECDNO
 
@@ -944,9 +937,9 @@ Computing RR 2D spectrum (TD)
  El. dipole at ref geom :    0.286E-01   0.744E-02   0.115E-01
 
  Numerical evaluation of xi(t)
-         Total time (fs):   413.171
-         Nr data points : 522
-         Time step (fs) :  0.792    
+         Total time (fs):   171.924
+         Nr data points : 218
+         Time step (fs) :  0.790    
 
  Broad. function        : VOI  
  Broad. exponent (Gau)  :    7.014E-06
@@ -955,1026 +948,22 @@ Computing RR 2D spectrum (TD)
  Broad. order (Lor)     : 1
  -------------------------------
 
- Computing correlation functions over 522 points
+ Computing correlation functions over 218 points
+
+ Calling FFT with 436 points
 
 
+ Entering in fft_calc subroutine (FFTW)
+ Ndata: 436
+ tini and tfin  -171.924     171.924
 
-RAILEIGH BAND
--------------------
-
- Final osc. energy (cm-1) =     0.000
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_00
-   RR 0->0 band at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
+ df  2.901587352099123E-003
+ dt  0.790456292826101     
  =========== tdspectra finished ===========  
  Timing...
-  CPU (s) for tdspectra :       0.163
+  CPU (s) for tdspectra :       0.072
  ==========================================
                                            
-
-NOTE: FOUND POINT OF THE SCAN CLOSEST TO THE ABS MAX                                                      
- 
- Ebest(eV) =     5.54
- Evert(eV) =     5.53
-
-
-
-FUNDAMENTAL BANDS
--------------------
-
-
-
-** Computing band for mode 1 **
- Final osc. energy (cm-1) =   134.203
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.150
- ==========================================
-                                           
-
-
-** Computing band for mode 2 **
- Final osc. energy (cm-1) =   160.415
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.150
- ==========================================
-                                           
-
-
-** Computing band for mode 3 **
- Final osc. energy (cm-1) =   196.223
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.150
- ==========================================
-                                           
-
-
-** Computing band for mode 4 **
- Final osc. energy (cm-1) =   302.966
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.150
- ==========================================
-                                           
-
-
-** Computing band for mode 5 **
- Final osc. energy (cm-1) =   314.074
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.149
- ==========================================
-                                           
-
-
-** Computing band for mode 6 **
- Final osc. energy (cm-1) =   428.071
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.150
- ==========================================
-                                           
-
-
-** Computing band for mode 7 **
- Final osc. energy (cm-1) =   432.898
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.150
- ==========================================
-                                           
-
-
-** Computing band for mode 8 **
- Final osc. energy (cm-1) =   481.645
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.150
- ==========================================
-                                           
-
-
-** Computing band for mode 9 **
- Final osc. energy (cm-1) =   574.282
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.150
- ==========================================
-                                           
-
-
-** Computing band for mode 10 **
- Final osc. energy (cm-1) =   635.116
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.150
- ==========================================
-                                           
-
-
-** Computing band for mode 11 **
- Final osc. energy (cm-1) =   759.350
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.143
- ==========================================
-                                           
-
-
-** Computing band for mode 12 **
- Final osc. energy (cm-1) =   765.259
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 13 **
- Final osc. energy (cm-1) =   782.460
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 14 **
- Final osc. energy (cm-1) =   804.972
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 15 **
- Final osc. energy (cm-1) =   824.891
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 16 **
- Final osc. energy (cm-1) =   880.922
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.141
- ==========================================
-                                           
-
-
-** Computing band for mode 17 **
- Final osc. energy (cm-1) =   956.394
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.141
- ==========================================
-                                           
-
-
-** Computing band for mode 18 **
- Final osc. energy (cm-1) =  1011.031
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 19 **
- Final osc. energy (cm-1) =  1050.495
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 20 **
- Final osc. energy (cm-1) =  1080.685
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 21 **
- Final osc. energy (cm-1) =  1201.115
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.136
- ==========================================
-                                           
-
-
-** Computing band for mode 22 **
- Final osc. energy (cm-1) =  1248.262
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.139
- ==========================================
-                                           
-
-
-** Computing band for mode 23 **
- Final osc. energy (cm-1) =  1270.661
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.140
- ==========================================
-                                           
-
-
-** Computing band for mode 24 **
- Final osc. energy (cm-1) =  1397.058
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 25 **
- Final osc. energy (cm-1) =  1429.504
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 26 **
- Final osc. energy (cm-1) =  1470.792
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 27 **
- Final osc. energy (cm-1) =  1478.659
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 28 **
- Final osc. energy (cm-1) =  1492.290
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 29 **
- Final osc. energy (cm-1) =  1504.093
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 30 **
- Final osc. energy (cm-1) =  1551.741
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 31 **
- Final osc. energy (cm-1) =  1702.401
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 32 **
- Final osc. energy (cm-1) =  1725.763
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 33 **
- Final osc. energy (cm-1) =  1742.737
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.136
- ==========================================
-                                           
-
-
-** Computing band for mode 34 **
- Final osc. energy (cm-1) =  3059.849
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 35 **
- Final osc. energy (cm-1) =  3117.018
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 36 **
- Final osc. energy (cm-1) =  3144.554
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 37 **
- Final osc. energy (cm-1) =  3234.985
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 38 **
- Final osc. energy (cm-1) =  3303.502
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
-
-
-** Computing band for mode 39 **
- Final osc. energy (cm-1) =  3435.881
-
-
- ____________________________________________
-  ============================================
-  PROGRAM: td_rr_1k
-   RR fundamentals at 0K with a harmonic 
-   TD formulation                           
- ____________________________________________
-  ============================================
- 
-
-
-* (rho,sigma = 1 1) *
- Calling FFT with 1044 points
-
- Fourie-Transform with: fft_calc subroutine (FFTW)
- =========== tdspectra finished ===========  
- Timing...
-  CPU (s) for tdspectra :       0.135
- ==========================================
-                                           
- =========== compRR_TD finished ===========  
- Timing...
-  CPU (s) for compRR_TD :       6.837
- ==========================================
-
 
 
 
@@ -1984,14 +973,14 @@ FUNDAMENTAL BANDS
 
 ===============================
  ---------------------------------
- 9 notes raised along the run
+ 7 notes raised along the run
  Look for NOTE in the output
  ---------------------------------
 
  
  ****************** FCclasses finished *******************
  Timing...   
-  CPU (s)       6.858
+  CPU (s)       0.097
  *********************************************************
  
  FCclasses finished successfully
