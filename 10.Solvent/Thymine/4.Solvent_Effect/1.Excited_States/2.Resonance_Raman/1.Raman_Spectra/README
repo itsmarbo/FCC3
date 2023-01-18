@@ -1,0 +1,22 @@
+------------------------------------------------
+		     README
+------------------------------------------------
+Here you will find all of the states, each of them
+has the following calculations:
+
+	1. ABS Spectra
+	2. Raman Spectra
+
+It is important to plot FIRST the 'ABS Spectra' and 
+from its information, the 'Raman Spectra'.
+
+Here are the specific calcilations per state, but 
+there's also another folder with specific ABS Spectra
+data, where the 'spec_Int_TD.dat'(where x= energy and
+y = ABS intensity) is used in order to plot the sum of
+all the "y's". This means that all the "ABS intensities"
+per each state are going to be sum, and from this a plot
+is made.
+
+ABS SPECTRA pwd:
+/home/marlene/gauss/FCC3/FCC3/FCC3/10.Solvent/Thymine/4.Solvent_Effect/1.Excited_States/2.Resonance_Raman
